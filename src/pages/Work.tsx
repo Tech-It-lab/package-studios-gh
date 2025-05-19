@@ -45,8 +45,7 @@ const Work: React.FC = () => {
         setActiveCategory(mappedCategory);
       }
     }
-  }, [location, categories]);
-
+  }, [location]);
   // Portfolio data
   const portfolioItems = [
     {
