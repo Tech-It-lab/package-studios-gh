@@ -78,7 +78,7 @@ const Home: React.FC = () => {
             loop
             playsInline
           >
-            <source src="/public/media/THIS IS GHANA Vol. 1 🇬🇭  (Drone Showreel).mp4" type="video/mp4" />
+            <source src="/media/THIS IS GHANA Vol. 1 🇬🇭  (Drone Showreel).mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
