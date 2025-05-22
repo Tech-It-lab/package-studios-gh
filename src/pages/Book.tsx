@@ -48,9 +48,16 @@ const Book: React.FC = () => {
 
     // Simulate API call
     try {
-      // In a real application, you'd send the data to your backend or email service here
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      // Send form data to Formspree
+      const response = await fetch("https://formspree.io/f/mnndyzeb", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
       
+    if (response.ok) {  
       toast({
         title: "Success",
         description: "Your booking request has been submitted successfully!",
@@ -67,7 +74,12 @@ const Book: React.FC = () => {
         message: '',
         agreed: false
       });
-      
+     
+      setSubmitStatus('success');
+      } else {
+        throw new Error("Failed to submit the form");
+      }
+
       setSubmitStatus('success');
     } catch (error) {
       toast({

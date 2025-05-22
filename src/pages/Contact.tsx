@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
 
     try {
       // Send form data to Formspree
-      const response = await fetch("https://formspree.io/f/movdpevn", {
+      const response = await fetch("https://formspree.io/f/mnndyzeb", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
