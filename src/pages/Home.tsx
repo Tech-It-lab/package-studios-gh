@@ -78,6 +78,7 @@ const Home: React.FC = () => {
             loop
             playsInline
             crossOrigin="anonymous"
+            preload="auto"
           >
             <source src="/media/this-is-ghana.mp4"  type="video/mp4"/>
             Your browser does not support the video tag.
