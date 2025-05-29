@@ -248,17 +248,29 @@ const Home: React.FC = () => {
           <div className="mt-16">
             <h3 className="text-center text-xl mb-8">Trusted by</h3>
             <div className="flex flex-wrap justify-center items-center gap-12">
-              <div className="h-22 w-40">
+              <div className="h-22 w-36">
                 <img src="/media/Honey.png" alt="Honeysuckle Logo" className="h-full w-full object-contain" />
               </div>
               <div className="h-15 w-44">
                 <img src="/media/FTY.png" alt="Free The Youth Logo" className="h-full w-full object-contain" />
               </div>
               <div className="h-15 w-24">
-                <img src="/media/Faceless.png" alt="Faceless Logo" className="h-full w-full object-contain" />
+                <img src="/media/S&M.png" alt="S&M Organics Logo" className="h-full w-full object-contain" />
+              </div>
+               <div className="h-13 w-20">
+                <img src="/media/B logo.png" alt="S&M Organics Logo" className="h-full w-full object-contain" />
+              </div>
+               <div className="h-15 w-24">
+                <img src="/media/DP.jpg" alt="S&M Organics Logo" className="h-full w-full object-contain" />
+              </div>
+               <div className="h-15 w-24">
+                <img src="/media/Spring-logo.png" alt="S&M Organics Logo" className="h-full w-full object-contain" />
               </div>
               <div className="h-15 w-24">
-                <img src="/media/S&M.png" alt="S&M Organics Logo" className="h-full w-full object-contain" />
+                <img src="/media/pitstop.jpg" alt="S&M Organics Logo" className="h-full w-full object-contain" />
+              </div>
+              <div className="h-15 w-24">
+                <img src="/media/guiness.jpg" alt="S&M Organics Logo" className="h-full w-full object-contain" />
               </div>
             </div>
           </div>

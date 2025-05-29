@@ -57,35 +57,35 @@ const Work: React.FC = () => {
     {
       title: 'Free The Youth',
       category: 'Commercials',
-      image: 'data:image/webp;base64,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',
+      image: '/media/fty pic.jpg',
       videoUrl: '/public/media/RACE TO LAGOS   - A film by @mr_akrong AVAILABLE TOMORROW AT @ourhomecoming  Racers- @isurboi_protein1 @kellykurlz @kweku_maposh @joey_lit.mp4'
     },
     {
-      title: 'The Digital Frontier',
+      title: 'For Meinergy',
       category: 'Documentaries',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
       videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
     },
     {
-      title: 'Night Lights Photography',
+      title: 'Product/Food Photography',
       category: 'Photography',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+      image: '/media/wings.jpg'
     },
     {
       title: 'Podcast Studio Setup',
       category: 'Podcasts',
-      image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b'
+      image: '/media/pod.jpg'
     },
     {
-      title: 'Echo - Music Video',
+      title: 'Rugged 2.0 - Music Video',
       category: 'Music Videos',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      image: '/media/Rugged.png',
+      videoUrl: 'https://www.youtube.com/embed/EuV8ShBmRj0'
     },
     {
-      title: 'Food Brand Commercial',
-      category: 'Commercials',
-      image: 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc'
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/BALL MEAL.JPG'
     },
     {
       title: 'Morning Talk Show',
@@ -95,7 +95,7 @@ const Work: React.FC = () => {
     {
       title: 'Product Photography',
       category: 'Photography',
-      image: 'https://drive.google.com/file/d/1CnlxDsAxmhQ3MhgyjH6sxzptNRwxsxXK/view?usp=sharing'
+      image: '/media/sunflower.jpg'
     },
     {
       title: 'Cultural Heritage',
@@ -109,10 +109,10 @@ const Work: React.FC = () => {
       image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
     },
     {
-      title: 'Product Launch Event',
+      title: 'Micro Gardens Staff Interview',
       category: 'Commercials',
-      image: 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      image: '/media/Fran.png',
+      videoUrl: '/media/Micros.mp4'
     }
   ];
 

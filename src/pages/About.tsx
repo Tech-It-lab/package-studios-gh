@@ -103,9 +103,9 @@ const About: React.FC = () => {
       <section className="py-20 bg-package-black text-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="aspect-video rounded-lg overflow-hidden">
+            <div className="aspect-square rounded-lg overflow-hidden">
               <img 
-                src="/media/Henry.png" 
+                src="/media/henry pic.jpg" 
                 alt="Henry Akrong, Director" 
                 className="w-full h-full object-cover"
               />
