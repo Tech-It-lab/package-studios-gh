@@ -77,8 +77,9 @@ const Home: React.FC = () => {
             muted
             loop
             playsInline
+            crossOrigin="anonymous"
           >
-            <source src="/media/this-is-ghana.mp4" />
+            <source src="/media/this-is-ghana.mp4"  type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
         </div>
