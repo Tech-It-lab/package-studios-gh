@@ -88,9 +88,10 @@ const Work: React.FC = () => {
       image: '/media/BALL MEAL.JPG'
     },
     {
-      title: 'Morning Talk Show',
-      category: 'Podcasts',
-      image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b'
+      title: 'Excellent BTS',
+      category: 'Music Video',
+      image: '/media/Excellent_BTS_img.png',
+      videoUrl: 'https://www.instagram.com/reel/DMVqIjXqxzk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     },
     {
       title: 'Product Photography',
@@ -98,10 +99,10 @@ const Work: React.FC = () => {
       image: '/media/sunflower.jpg'
     },
     {
-      title: 'Cultural Heritage',
-      category: 'Documentaries',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      title: 'RJZ - fOR lIFE',
+      category: 'Music Video',
+      image: 'https://ghanamusic.com/wp-content/uploads/2020/04/PSX_20200420_150219-1200x900.jpg',
+      videoUrl: 'https://youtu.be/x4gBS0byPR0'
     },
     {
       title: 'Fashion Collection',

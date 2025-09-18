@@ -7,6 +7,7 @@ import Button from '../components/Button';
 import SectionHeader from '../components/SectionHeader';
 import ServiceCard from '../components/ServiceCard';
 import PortfolioItem from '../components/PortfolioItem';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '../components/ui/carousel';
 
 const Home: React.FC = () => {
   const countRef = useRef<HTMLDivElement>(null);
@@ -49,7 +50,7 @@ const Home: React.FC = () => {
 
   const featuredWork = [
     {
-      title: 'Music Video - Excellent"',
+      title: 'Music Video - Excellent',
       category: 'Music Video',
       image: 'https://th.bing.com/th/id/OIP.nPK68WVkVrmR1rNGbj5zawHaHa?cb=iwp2&rs=1&pid=ImgDetMain',
     },
@@ -79,6 +80,7 @@ const Home: React.FC = () => {
             playsInline
             crossOrigin="anonymous"
             preload="auto"
+           
           >
             <source src="/media/this-is-ghana.mp4"  type="video/mp4"/>
             Your browser does not support the video tag.
@@ -235,17 +237,46 @@ const Home: React.FC = () => {
             centered
           />
           
-          <div className="max-w-3xl mx-auto">
-            <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
-              <p className="text-xl italic mb-6">
-                "Package Studios delivered beyond our expectations. Their creativity and technical expertise transformed our vision into an incredible visual story."
-              </p>
-              <cite className="not-italic">
-                <div className="font-medium">Sarah Johnson</div>
-                <div className="text-gray-600 dark:text-gray-400 text-sm">Marketing Director, Accra Media</div>
-              </cite>
-            </blockquote>
-          </div>
+          <Carousel className="max-w-4xl mx-auto">
+            <CarouselContent>
+              <CarouselItem>
+                <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
+                  <p className="text-xl italic mb-6">
+                    "Package Studios delivered beyond our expectations. Their creativity and technical expertise transformed our vision into an incredible visual story."
+                  </p>
+                  <cite className="not-italic">
+                    <div className="font-medium">Sarah Johnson</div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">Marketing Director, Accra Media</div>
+                  </cite>
+                </blockquote>
+              </CarouselItem>
+              <CarouselItem>
+                <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
+                  <p className="text-xl italic mb-6">
+                    "Working with Package Studios was seamless. They understood our brand perfectly and delivered content that exceeded our marketing goals."
+                  </p>
+                  <cite className="not-italic">
+                    <div className="font-medium">Michael Thompson</div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">Creative Director, TechCorp</div>
+                  </cite>
+                </blockquote>
+              </CarouselItem>
+              <CarouselItem>
+              
+                <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
+                  <p className="text-xl italic mb-6">
+                    "The quality of production from Package Studios is unmatched. Our music video became a viral hit thanks to their creative vision."
+                  </p>
+                  <cite className="not-italic">
+                    <div className="font-medium">Kwame Asante</div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">Recording Artist</div>
+                  </cite>
+                </blockquote>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
           
           <div className="mt-16">
             <h3 className="text-center text-xl mb-8">Trusted by</h3>
