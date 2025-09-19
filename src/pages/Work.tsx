@@ -98,7 +98,7 @@ const Work: React.FC = () => {
   
     {
       title: 'Excellent BTS',
-      category: 'Music Video',
+      category: 'Music Videos',
       image: '/media/Excellent_BTS_img.png',
       videoUrl: 'https://www.instagram.com/reel/DMVqIjXqxzk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     },
@@ -110,7 +110,7 @@ const Work: React.FC = () => {
     },
     {
       title: 'RJZ - fOR lIFE',
-      category: 'Music Video',
+      category: 'Music Videos',
       image: 'https://ghanamusic.com/wp-content/uploads/2020/04/PSX_20200420_150219-1200x900.jpg',
       videoUrl: 'https://www.youtube.com/embed/x4gBS0byPR0'
     },
