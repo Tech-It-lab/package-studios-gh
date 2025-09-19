@@ -4,9 +4,18 @@ import { useLocation } from 'react-router-dom';
 import Layout from '../components/Layout';
 import SectionHeader from '../components/SectionHeader';
 import PortfolioItem from '../components/PortfolioItem';
+import PortfolioAlbum from '../components/PortfolioAlbum';
 import Button from '../components/Button';
 import { cn } from '@/lib/utils';
 import ReactPlayer from 'react-player'
+
+interface PortfolioItemData {
+  title: string;
+  category: string;
+  image: string;
+  videoUrl?: string;
+  brandName?: string;
+}
 
 const Work: React.FC = () => {
   // Categories for filtering
@@ -16,7 +25,8 @@ const Work: React.FC = () => {
     'Podcasts',
     'Photography',
     'Documentaries',
-    'Commercials'
+    'Commercials',
+    'Albums'
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');
@@ -46,8 +56,146 @@ const Work: React.FC = () => {
       }
     }
   }, [location]);
+
+// Brand Albums data
+const brandAlbums: {
+  brandName: string;
+  brandLogo: string;
+  description: string;
+  items: PortfolioItemData[];
+}[] = [
+  {
+    brandName: "Honeysuckle",
+    brandLogo: "/src/components/media/honeysuckle-logo.png",
+    description: "Music production and video content",
+    items: [
+      {
+        title: 'Album Cover Shoot',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+      },
+      {
+        title: 'Music Video - Single Release',
+        category: 'Music Videos',
+        image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        title: 'Behind the Scenes',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b'
+      }
+    ]
+  },
+  {
+    brandName: "Free The Youth",
+    brandLogo: "/src/components/media/free-the-youth-logo.png",
+    description: "Documentary and awareness campaigns",
+    items: [
+      {
+        title: 'Campaign Documentary',
+        category: 'Documentaries',
+        image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        title: 'Event Photography',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+      }
+    ]
+  },
+  {
+    brandName: "S&M Organics",
+    brandLogo: "/src/components/media/sm-organics-logo.png",
+    description: "Product photography and commercials",
+    items: [
+      {
+        title: 'Product Showcase',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+      },
+      {
+        title: 'Brand Commercial',
+        category: 'Commercials',
+        image: 'https://images.unsplash.com/photo-1487887235947-a955ef187fcc',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      }
+    ]
+  },
+  {
+    brandName: "Sunshine Ghana",
+    brandLogo: "https://via.placeholder.com/150x150/FFD700/000000?text=SG",
+    description: "Beverage and lifestyle brand content",
+    items: [
+      {
+        title: 'Brand Campaign Shoot',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772'
+      },
+      {
+        title: 'Product Commercial',
+        category: 'Commercials',
+        image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        title: 'Lifestyle Photography',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4'
+      }
+    ]
+  },
+  {
+    brandName: "Rockefellas",
+    brandLogo: "https://via.placeholder.com/150x150/8B4513/FFFFFF?text=R",
+    description: "Restaurant and food content creation",
+    items: [
+      {
+        title: 'Menu Photography',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b'
+      },
+      {
+        title: 'Restaurant Commercial',
+        category: 'Commercials',
+        image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        title: 'Food Styling Session',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445'
+      }
+    ]
+  },
+  {
+    brandName: "Microgardens",
+    brandLogo: "https://via.placeholder.com/150x150/228B22/FFFFFF?text=MG",
+    description: "Urban farming and sustainability projects",
+    items: [
+      {
+        title: 'Farm Documentary',
+        category: 'Documentaries',
+        image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      },
+      {
+        title: 'Product Photography',
+        category: 'Photography',
+        image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b'
+      },
+      {
+        title: 'Sustainability Campaign',
+        category: 'Commercials',
+        image: 'https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad',
+        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+      }
+    ]
+  }
+];
   // Portfolio data
-  const portfolioItems = [
+  const portfolioItems: PortfolioItemData[] = [
     {
       title: 'Excellent - Music Video',
       category: 'Music Videos',
@@ -117,10 +265,22 @@ const Work: React.FC = () => {
     }
   ];
 
+  // Flatten album items into portfolio items for unified filtering
+  const albumItems = brandAlbums.flatMap(album =>
+    album.items.map(item => ({
+      ...item,
+      brandName: album.brandName,
+      category: 'Albums' // Override to 'Albums' for album items
+    }))
+  );
+
+  // Combine portfolio items and album items
+  const allItems: PortfolioItemData[] = [...portfolioItems, ...albumItems];
+
   // Filter items based on active category
   const filteredItems = activeCategory === 'All' 
-    ? portfolioItems 
-    : portfolioItems.filter(item => item.category === activeCategory);
+    ? allItems 
+    : allItems.filter(item => item.category === activeCategory);
 
   return (
     <Layout>
@@ -161,22 +321,39 @@ const Work: React.FC = () => {
       {/* Portfolio Grid */}
       <section className="py-20">
         <div className="container-custom">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredItems.map((item, index) => (
-              <PortfolioItem
-                key={index}
-                title={item.title}
-                category={item.category}
-                image={item.image}
-                videoUrl={item.videoUrl}
-              />
-            ))}
-          </div>
-          
-          {filteredItems.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-xl text-gray-500">No items found in this category. Please try another filter.</p>
+          {activeCategory === 'Albums' ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {brandAlbums.map((album, index) => (
+                <PortfolioAlbum
+                  key={index}
+                  brandName={album.brandName}
+                  brandLogo={album.brandLogo}
+                  description={album.description}
+                  items={album.items}
+                />
+              ))}
             </div>
+          ) : (
+            <>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredItems.map((item, index) => (
+                  <PortfolioItem
+                    key={index}
+                    title={item.title}
+                    category={item.category}
+                    image={item.image}
+                    videoUrl={item.videoUrl}
+                    brandName={item.brandName}
+                  />
+                ))}
+              </div>
+
+              {filteredItems.length === 0 && (
+                <div className="text-center py-20">
+                  <p className="text-xl text-gray-500">No items found in this category. Please try another filter.</p>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>
