@@ -202,17 +202,11 @@ const brandAlbums: {
       image: 'https://th.bing.com/th/id/OIP.nPK68WVkVrmR1rNGbj5zawHaHa?cb=iwp2&rs=1&pid=ImgDetMain',
       videoUrl: "https://www.youtube.com/embed/_-oNukOGyEw" 
     },
-    {
-      title: 'Free The Youth',
-      category: 'Commercials',
-      image: '/media/fty pic.jpg',
-      videoUrl: '/public/media/RACE TO LAGOS   - A film by @mr_akrong AVAILABLE TOMORROW AT @ourhomecoming  Racers- @isurboi_protein1 @kellykurlz @kweku_maposh @joey_lit.mp4'
-    },
-    {
-      title: 'For Meinergy',
-      category: 'Documentaries',
-      image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5',
-      videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+     {
+      title: 'Rugged 2.0 - Music Video',
+      category: 'Music Videos',
+      image: '/media/Rugged.png',
+      videoUrl: 'https://www.youtube.com/embed/EuV8ShBmRj0'
     },
     {
       title: 'Product/Food Photography',
@@ -220,15 +214,10 @@ const brandAlbums: {
       image: '/media/wings.jpg'
     },
     {
-      title: 'Podcast Studio Setup',
-      category: 'Podcasts',
-      image: '/media/pod.jpg'
-    },
-    {
-      title: 'Rugged 2.0 - Music Video',
-      category: 'Music Videos',
-      image: '/media/Rugged.png',
-      videoUrl: 'https://www.youtube.com/embed/EuV8ShBmRj0'
+      title: 'Voices of Silence',
+      category: 'Documentaries',
+      image: '/media/vos.png',
+      videoUrl: 'https://www.youtube.com/embed/xHtthgdy-ik'
     },
     {
       title: 'Food Photography',
@@ -236,27 +225,41 @@ const brandAlbums: {
       image: '/media/BALL MEAL.JPG'
     },
     {
+      title: 'Product Photography',
+      category: 'Photography',
+      image: '/media/sunflower.jpg'
+    },
+    {
+      title: 'Podcast Studio Setup',
+      category: 'Podcasts',
+      image: '/media/pod.jpg'
+    },
+  
+    {
       title: 'Excellent BTS',
       category: 'Music Video',
       image: '/media/Excellent_BTS_img.png',
       videoUrl: 'https://www.instagram.com/reel/DMVqIjXqxzk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     },
     {
-      title: 'Product Photography',
-      category: 'Photography',
-      image: '/media/sunflower.jpg'
+      title: 'Guzangs Fashion Video',
+      category: 'Commercial',
+      image: '/media/Guzangs.png',
+      videoUrl: 'https://www.instagram.com/reel/DL0ADi_RWI4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
     },
     {
       title: 'RJZ - fOR lIFE',
       category: 'Music Video',
       image: 'https://ghanamusic.com/wp-content/uploads/2020/04/PSX_20200420_150219-1200x900.jpg',
-      videoUrl: 'https://youtu.be/x4gBS0byPR0'
+      videoUrl: 'https://www.youtube.com/embed/x4gBS0byPR0'
     },
-    {
-      title: 'Fashion Collection',
-      category: 'Photography',
-      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22'
+     {
+      title: 'Free The Youth',
+      category: 'Commercials',
+      image: '/media/fty pic.jpg',
+      videoUrl: '/public/media/RACE TO LAGOS   - A film by @mr_akrong AVAILABLE TOMORROW AT @ourhomecoming  Racers- @isurboi_protein1 @kellykurlz @kweku_maposh @joey_lit.mp4'
     },
+    
     {
       title: 'Micro Gardens Staff Interview',
       category: 'Commercials',
@@ -385,7 +388,7 @@ const brandAlbums: {
                 </p>
                 <div className="space-y-4 mb-6">
                   <div>
-                    <span className="font-semibold">Client:</span> Record Label Name
+                    <span className="font-semibold">Client:</span> Kojo Black
                   </div>
                   <div>
                     <span className="font-semibold">Services:</span> Direction, Cinematography, Editing, Color Grading, Styling
@@ -404,20 +407,20 @@ const brandAlbums: {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-1 lg:order-2 aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/media/bye-bye-cover-art.jpg" 
+                  src="/media/vos.png" 
                   alt="Music Video Project" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="order-2 lg:order-1">
-                <h3 className="text-2xl font-bold mb-3">Aburi Documentary</h3>
-                <p className="text-package-red font-medium mb-4">Documentary Series</p>
+                <h3 className="text-2xl font-bold mb-3">Voices of Silence</h3>
+                <p className="text-package-red font-medium mb-4">Documentary</p>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  An award-winning documentary series exploring the impact of technology on local communities in Ghana. Through intimate interviews and compelling visuals, we tell the story of digital transformation in West Africa.
+                  Voices of Silence is a moving documentary that sheds light on the lives, challenges, and triumphs of students at Ghana's first school for the deaf and blind. It captures their resilience, talents, and dreams, while raising awareness about the power of inclusion and education.
                 </p>
                 <div className="space-y-4 mb-6">
                   <div>
-                    <span className="font-semibold">Client:</span> NGO Media Foundation
+                    <span className="font-semibold">Client:</span> Meinergy & Package Studios Collaboration
                   </div>
                   <div>
                     <span className="font-semibold">Services:</span> Research, Direction, Production, Post-Production
@@ -426,107 +429,45 @@ const brandAlbums: {
                     <span className="font-semibold">Year:</span> 2022
                   </div>
                 </div>
-                <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  Watch Trailer
+                <Button href="https://youtu.be/xHtthgdy-ik" target="_blank">
+                  Watch Documentary
                 </Button>
               </div>
             </div>
 
-           {/* Featured Project 1.1 */}
+           {/* Featured Project 3 */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/public/media/Rugged.png" 
-                  alt="Music Video Project" 
+                  src="/public/media/fty pic.jpg" 
+                  alt="FTY Commercial" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-3">RJZ - "Bye Bye"</h3>
-                <p className="text-package-red font-medium mb-4">Music Video</p>
+                <h3 className="text-2xl font-bold mb-3">FTY Promo</h3>
+                <p className="text-package-red font-medium mb-4">Commercial</p>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  A vibrant music video shot in urban Accra, combining traditional elements with modern cinematography. This project showcases our ability to create visually stunning content that enhances the artist's musical vision.
+                  A dynamic promo video for Free Day Youth’s new race-themed clothing line, bringing the energy of the track to life with a race course-inspired concept that highlights speed, style, and youth culture.
                 </p>
                 <div className="space-y-4 mb-6">
                   <div>
-                    <span className="font-semibold">Client:</span> Record Label Name
+                    <span className="font-semibold">Client:</span> Free The Youth
                   </div>
                   <div>
-                    <span className="font-semibold">Services:</span> Direction, Cinematography, Editing, Color Grading, Styling
+                    <span className="font-semibold">Services:</span> Direction, Cinematography, Editing, Color Grading,
                   </div>
                   <div>
-                    <span className="font-semibold">Year:</span> 2020
+                    <span className="font-semibold">Year:</span> 2025
                   </div>
                 </div>
-                <Button href="https://youtu.be/jQpdf1rTZRA" target="_blank">
+                <Button href="https://www.instagram.com/reel/DImRC5lMDX0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank">
                   Watch Video
                 </Button>
               </div>
             </div>
 
-            {/* Featured Project 2 */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1 lg:order-2 aspect-video rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="/media/bye-bye-cover-art.jpg" 
-                  alt="Music Video Project" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="order-2 lg:order-1">
-                <h3 className="text-2xl font-bold mb-3">Aburi Documentary</h3>
-                <p className="text-package-red font-medium mb-4">Documentary Series</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  An award-winning documentary series exploring the impact of technology on local communities in Ghana. Through intimate interviews and compelling visuals, we tell the story of digital transformation in West Africa.
-                </p>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <span className="font-semibold">Client:</span> NGO Media Foundation
-                  </div>
-                  <div>
-                    <span className="font-semibold">Services:</span> Research, Direction, Production, Post-Production
-                  </div>
-                  <div>
-                    <span className="font-semibold">Year:</span> 2022
-                  </div>
-                </div>
-                <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  Watch Trailer
-                </Button>
-              </div>
-            </div>
-
-            {/* Featured Project 3 */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="aspect-video rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1487887235947-a955ef187fcc" 
-                  alt="Commercial Project" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-3">Tech Product Launch</h3>
-                <p className="text-package-red font-medium mb-4">Commercial</p>
-                <p className="text-gray-600 dark:text-gray-300 mb-6">
-                  A sleek, high-energy commercial for a major tech product launch. This project demonstrates our ability to create compelling advertising content that drives consumer engagement and brand awareness.
-                </p>
-                <div className="space-y-4 mb-6">
-                  <div>
-                    <span className="font-semibold">Client:</span> Tech Brand Inc.
-                  </div>
-                  <div>
-                    <span className="font-semibold">Services:</span> Creative Direction, Production, Visual Effects, Sound Design
-                  </div>
-                  <div>
-                    <span className="font-semibold">Year:</span> 2024
-                  </div>
-                </div>
-                <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
-                  Watch Commercial
-                </Button>
-              </div>
-            </div>
+           
           </div>
         </div>
       </section>
