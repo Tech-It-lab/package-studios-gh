@@ -1,0 +1,7 @@
+- [ ] Remove 'Albums' from categories array in Work.tsx
+- [ ] Remove brandAlbums data in Work.tsx
+- [ ] Remove albumItems and allItems, simplify to use portfolioItems only
+- [ ] Remove conditional rendering for albums, always show portfolio grid
+- [ ] Remove import of PortfolioAlbum in Work.tsx
+- [ ] Delete src/components/PortfolioAlbum.tsx
+- [ ] Test the Work page filtering
