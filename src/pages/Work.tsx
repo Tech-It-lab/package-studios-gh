@@ -24,6 +24,7 @@ const Work: React.FC = () => {
     'Podcasts',
     'Photography',
     'Documentaries',
+    'Videography',
     'Commercials'
   ];
 
@@ -42,7 +43,7 @@ const Work: React.FC = () => {
         'podcast-production': 'Podcasts',
         'photography': 'Photography',
         'documentaries': 'Documentaries',
-        'videography': 'Music Videos',
+        'videography': 'Videography',
         'commercials': 'Commercials',
         'social-media': 'Commercials',
         'drone': 'Photography'
@@ -126,7 +127,45 @@ const Work: React.FC = () => {
       category: 'Commercials',
       image: '/media/Fran.png',
       videoUrl: '/media/Micros.mp4'
+    },
+    {
+      title: 'This is Ghana',
+      category: 'Videography',
+      image: '/media/this is ghana pic.jpg',
+      videoUrl: 'https://www.youtube.com/embed/wCGpuRi9V3E'
+    },
+    {
+      title: 'Free the youth Sports Jersey Campaign',
+      category: 'Commercials',
+      image: '/media/FTy sports jersey.png',
+      videoUrl: 'https://youtube.com/embed/dNOa2U85kaE'
+    },
+    {
+      title: 'Bet Planet Golden Goal Ad',
+      category: 'Commercials',
+      image: '/media/betplanet pic.png',
+      videoUrl: 'https://youtube.com/embed/0OJTfxJ695A'
+    },
+    {
+      title: 'Chipper Cash',
+      category: 'Commercials',
+      image: '/media/Chipper.png',
+      videoUrl: 'https://youtube.com/embed/cpRiHoUJpYc'
+    },
+    {
+      title: 'Jauhari Jewelry',
+      category: 'Commercials',
+      image: '/media/jauhari (2).png',
+      videoUrl: 'https://youtube.com/embed/rqV4ouV-tH4'
+    },
+    {
+      title: 'Bet Planet wheel of fortune',
+      category: 'Commercials',
+      image: '/media/wheel.png',
+      videoUrl: 'https://youtube.com/embed/ihg9cHb92i8'
     }
+
+    
   ];
 
   // Filter items based on active category
