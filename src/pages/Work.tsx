@@ -78,7 +78,7 @@ const Work: React.FC = () => {
     {
       title: 'Voices of Silence',
       category: 'Documentaries',
-      image: '/media/vos.png',
+      image: '/media/vos1.jpg',
       videoUrl: 'https://www.youtube.com/embed/xHtthgdy-ik'
     },
     {
@@ -164,25 +164,7 @@ const Work: React.FC = () => {
       image: '/media/wheel.png',
       videoUrl: 'https://youtube.com/embed/ihg9cHb92i8'
     },
-    {
-      title: 'Tulenkey - Your Girlfriend',
-      category: 'Music Videos',
-      image: '/media/tulenkey.jpg',
-      videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
-    },
-    {
-      title: 'RJZ - Bye Bye',
-      category: 'Music Videos',
-      image: '/media/bye-bye-cover-art.jpg',
-      videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
-    },
-    {
-      title: 'RJZ - Not Yours',
-      category: 'Music Videos',
-      image: '/media/not yours.png',
-      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
-    },
-    {
+     {
       title: 'La Meme Gang ft Kwame Eugene - This Year',
       category: 'Music Videos',
       image: '/media/lameme.png',
@@ -199,7 +181,26 @@ const Work: React.FC = () => {
       category: 'Music Videos',
       image: '/media/daddy.png',
       videoUrl: 'https://youtube.com/embed/X48qb6124n0'
+    },
+    {
+      title: 'Tulenkey - Your Girlfriend',
+      category: 'Music Videos',
+      image: '/media/tulenkey.jpg',
+      videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
+    },
+    {
+      title: 'RJZ - Not Yours',
+      category: 'Music Videos',
+      image: '/media/not yours.png',
+      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
+    },
+    {
+      title: 'RJZ - Bye Bye',
+      category: 'Music Videos',
+      image: '/media/bye-bye-cover-art.jpg',
+      videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
     }
+   
     
   ];
 
@@ -314,8 +315,8 @@ const Work: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-1 lg:order-2 aspect-video rounded-lg overflow-hidden shadow-lg">
                 <img 
-                  src="/media/vos.png" 
-                  alt="Music Video Project" 
+                  src="/media/vos1.jpg" 
+                  alt="VoS Documentary" 
                   className="w-full h-full object-cover"
                 />
               </div>

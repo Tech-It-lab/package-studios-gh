@@ -55,14 +55,15 @@ const Home: React.FC = () => {
       image: 'https://th.bing.com/th/id/OIP.nPK68WVkVrmR1rNGbj5zawHaHa?cb=iwp2&rs=1&pid=ImgDetMain',
     },
     {
-      title: 'Music Video - Bye Bye',
+      title: 'Food Photography',
       category: 'Music Video',
-      image: '/media/bye-bye-cover-art.jpg',
+      image: '/media/wings.jpg',
     },
     {
-      title: 'Documentary - "Digital Age"',
+      title: 'Voices of Silence',
       category: 'Documentary',
-      image: '/media/logo1.png',
+      image: '/media/vos3.jpg',
+      videoUrl: 'https://youtube.com/embed/xHtthgdy-ik',
     }
   ];
 
