@@ -183,9 +183,19 @@ const Services: React.FC = () => {
                 <Button to={`/portfolio?filter=${service.id}`}>View Related Projects</Button>
               </div>
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
-                <img 
-                  src={`https://source.unsplash.com/random/800x600/?${service.id.replace('-', ',')}`} 
-                  alt={service.title} 
+                <img
+                  src={
+                    service.id === 'music-videos' ? '/media/mv prod.png' :
+                    service.id === 'podcast-production' ? '/media/pod prod.png' :
+                     service.id === 'documentaries' ? '/media/docu.png' :
+                     service.id === 'photography' ? '/media/photo.png' :
+                     service.id === 'videography' ? '/media/vid.png' :
+                     service.id === 'commercials' ? '/media/ads.png' :
+                     service.id === 'social-media' ? '/media/sm.png' :
+                     service.id === 'drone' ? '/media/drone.png' :
+                    `https://source.unsplash.com/random/800x600/?${service.id.replace('-', ',')}`
+                  }
+                  alt={service.title}
                   className="w-full h-full object-cover"
                 />
               </div>

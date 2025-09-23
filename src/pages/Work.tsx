@@ -163,8 +163,43 @@ const Work: React.FC = () => {
       category: 'Commercials',
       image: '/media/wheel.png',
       videoUrl: 'https://youtube.com/embed/ihg9cHb92i8'
+    },
+    {
+      title: 'Tulenkey - Your Girlfriend',
+      category: 'Music Videos',
+      image: '/media/tulenkey.jpg',
+      videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
+    },
+    {
+      title: 'RJZ - Bye Bye',
+      category: 'Music Videos',
+      image: '/media/bye-bye-cover-art.jpg',
+      videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
+    },
+    {
+      title: 'RJZ - Not Yours',
+      category: 'Music Videos',
+      image: '/media/not yours.png',
+      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
+    },
+    {
+      title: 'La Meme Gang ft Kwame Eugene - This Year',
+      category: 'Music Videos',
+      image: '/media/lameme.png',
+      videoUrl: 'https://youtube.com/embed/YLiEIuRqtdM'
+    },
+    {
+      title: 'Kayso - Take It',
+      category: 'Music Videos',
+      image: '/media/Kayso.png',
+      videoUrl: 'https://youtube.com/embed/5mi17VuTON0'
+    },
+    {
+      title: 'RJZ ft Kwesi Arthur - Hello Daddy',
+      category: 'Music Videos',
+      image: '/media/daddy.png',
+      videoUrl: 'https://youtube.com/embed/X48qb6124n0'
     }
-
     
   ];
 

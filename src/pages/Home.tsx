@@ -242,11 +242,11 @@ const Home: React.FC = () => {
               <CarouselItem>
                 <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
                   <p className="text-xl italic mb-6">
-                    "Package Studios delivered beyond our expectations. Their creativity and technical expertise transformed our vision into an incredible visual story."
+                    "I love it! This is really beautiful. Working with the team is always a fun experience, and the final result perfectly executed.."
                   </p>
                   <cite className="not-italic">
-                    <div className="font-medium">Sarah Johnson</div>
-                    <div className="text-gray-600 dark:text-gray-400 text-sm">Marketing Director, Accra Media</div>
+                    <div className="font-medium">India Punjabi</div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">Sunshine Ghana</div>
                   </cite>
                 </blockquote>
               </CarouselItem>
@@ -256,8 +256,8 @@ const Home: React.FC = () => {
                     "Working with Package Studios was seamless. They understood our brand perfectly and delivered content that exceeded our marketing goals."
                   </p>
                   <cite className="not-italic">
-                    <div className="font-medium">Michael Thompson</div>
-                    <div className="text-gray-600 dark:text-gray-400 text-sm">Creative Director, TechCorp</div>
+                    <div className="font-medium">Team</div>
+                    <div className="text-gray-600 dark:text-gray-400 text-sm">Free The Youth Ghana</div>
                   </cite>
                 </blockquote>
               </CarouselItem>
@@ -268,7 +268,7 @@ const Home: React.FC = () => {
                     "The quality of production from Package Studios is unmatched. Our music video became a viral hit thanks to their creative vision."
                   </p>
                   <cite className="not-italic">
-                    <div className="font-medium">Kwame Asante</div>
+                    <div className="font-medium">Kojo Blak</div>
                     <div className="text-gray-600 dark:text-gray-400 text-sm">Recording Artist</div>
                   </cite>
                 </blockquote>

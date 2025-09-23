@@ -36,7 +36,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({
             alt={title}
             className="w-full h-full object-contain"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-5">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-70 flex flex-col justify-end p-5">
             <h3 className="text-white font-bold text-lg">{title}</h3>
             <p className="text-gray-300 text-sm">{category}</p>
             {brandName && <p className="text-gray-400 text-xs">Album: {brandName}</p>}
