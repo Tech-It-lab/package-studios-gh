@@ -12,7 +12,8 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 const Home: React.FC = () => {
   const countRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  
+  const [videoLoading, setVideoLoading] = React.useState(true);
+
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.play().catch(error => {
@@ -20,6 +21,10 @@ const Home: React.FC = () => {
       });
     }
   }, []);
+
+  const handleVideoLoad = () => {
+    setVideoLoading(false);
+  };
 
   const services = [
     {
@@ -72,6 +77,11 @@ const Home: React.FC = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-package-black">
+          {videoLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-package-red"></div>
+            </div>
+          )}
           <video
             ref={videoRef}
             className="w-full h-full object-cover opacity-60"
@@ -81,9 +91,9 @@ const Home: React.FC = () => {
             playsInline
             crossOrigin="anonymous"
             preload="auto"
-           
+            onLoadedData={handleVideoLoad}
           >
-            <source src="/media/this-is-ghana.mp4"  type="video/mp4"/>
+            <source src="/media/this-is-ghana.mp4" type="video/mp4"/>
             Your browser does not support the video tag.
           </video>
         </div>
