@@ -56,7 +56,7 @@ const Home: React.FC = () => {
     },
     {
       title: 'Food Photography',
-      category: 'Music Video',
+      category: 'Photography',
       image: '/media/wings.jpg',
     },
     {
@@ -81,6 +81,7 @@ const Home: React.FC = () => {
             playsInline
             crossOrigin="anonymous"
             preload="auto"
+            poster="/media/this.png"
            
           >
             <source src="/media/this-is-ghana.mp4"  type="video/mp4"/>
@@ -243,7 +244,7 @@ const Home: React.FC = () => {
               <CarouselItem>
                 <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
                   <p className="text-xl italic mb-6">
-                    "I love it! This is really beautiful. Working with the team is always a fun experience, and the final result perfectly executed.."
+                    "I love it! This is really beautiful. Thank you!"
                   </p>
                   <cite className="not-italic">
                     <div className="font-medium">India Punjabi</div>
