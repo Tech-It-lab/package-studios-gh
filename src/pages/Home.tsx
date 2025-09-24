@@ -61,7 +61,7 @@ const Home: React.FC = () => {
     },
     {
       title: 'Food Photography',
-      category: 'Photography',
+      category: 'Music Video',
       image: '/media/wings.jpg',
     },
     {
@@ -253,7 +253,7 @@ const Home: React.FC = () => {
               <CarouselItem>
                 <blockquote className="text-center p-8 bg-white dark:bg-package-black shadow-lg rounded-lg border border-package-light-gray">
                   <p className="text-xl italic mb-6">
-                    "I love it! This is really beautiful. Thank you!"
+                    "I love it! This is really beautiful. Working with the team is always a fun experience, and the final result perfectly executed.."
                   </p>
                   <cite className="not-italic">
                     <div className="font-medium">India Punjabi</div>
