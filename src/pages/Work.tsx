@@ -59,6 +59,38 @@ const Work: React.FC = () => {
   // Portfolio data
   const portfolioItems: PortfolioItemData[] = [
     {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock3.jpg',
+    },
+    {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock 5.jpg',
+    },
+    {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock1.jpg',
+    },
+    {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock8.jpg',
+    },
+    {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock7.jpg',
+    },
+  
+    {
+      title: 'Food Photography',
+      category: 'Photography',
+      image: '/media/rock 4.jpg',
+    },
+    
+    {
       title: 'Excellent - Music Video',
       category: 'Music Videos',
       image: 'https://th.bing.com/th/id/OIP.nPK68WVkVrmR1rNGbj5zawHaHa?cb=iwp2&rs=1&pid=ImgDetMain',
@@ -199,7 +231,12 @@ const Work: React.FC = () => {
       category: 'Music Videos',
       image: '/media/bye-bye-cover-art.jpg',
       videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
-    }
+    },
+    {
+      title: 'Photography',
+      category: 'Photography',
+      image: '/media/kiwi.jpg',
+    },
    
     
   ];
