@@ -185,14 +185,14 @@ const Services: React.FC = () => {
               <div className="aspect-video bg-gray-200 rounded-lg overflow-hidden shadow-lg">
                 <img
                   src={
-                    service.id === 'music-videos' ? '/media/mv prod.png' :
-                    service.id === 'podcast-production' ? '/media/pod prod.png' :
-                     service.id === 'documentaries' ? '/media/docu.png' :
-                     service.id === 'photography' ? '/media/photo.png' :
-                     service.id === 'videography' ? '/media/vid.png' :
-                     service.id === 'commercials' ? '/media/ads.png' :
+                    service.id === 'music-videos' ? '/media/music vid.jpg' :
+                    service.id === 'podcast-production' ? '/media/pod.png' :
+                     service.id === 'documentaries' ? '/media/doc2.jpg' :
+                     service.id === 'photography' ? '/media/kev.jpg' :
+                     service.id === 'videography' ? '/media/doc.jpg' :
+                     service.id === 'commercials' ? '/media/FTy sports jersey.png' :
                      service.id === 'social-media' ? '/media/sm.png' :
-                     service.id === 'drone' ? '/media/drone.png' :
+                     service.id === 'drone' ? '/media/drone1.jpg' :
                     `https://source.unsplash.com/random/800x600/?${service.id.replace('-', ',')}`
                   }
                   alt={service.title}
