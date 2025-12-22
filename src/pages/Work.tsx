@@ -25,7 +25,8 @@ const Work: React.FC = () => {
     'Photography',
     'Documentaries',
     'Videography',
-    'Commercials'
+    'Commercials',
+    'Animations'
   ];
 
   const [activeCategory, setActiveCategory] = useState('All');
@@ -46,7 +47,8 @@ const Work: React.FC = () => {
         'videography': 'Videography',
         'commercials': 'Commercials',
         'social-media': 'Commercials',
-        'drone': 'Photography'
+        'drone': 'Photography',
+        'animation': 'Animations'
       };
       
       const mappedCategory = categoryMapping[filterParam];
@@ -221,10 +223,16 @@ const Work: React.FC = () => {
       videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
     },
     {
-      title: 'RJZ - Not Yours',
-      category: 'Music Videos',
-      image: '/media/not yours.png',
-      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
+      title: 'NWGL Christmas',
+      category: 'Animation',
+      image: '/media/UHL.png',
+      videoUrl: '/media/UHL Xmas.mp4'
+    },
+    {
+      title: 'NWGL Christmas',
+      category: 'Animation',
+      image: '/media/NWGL Xmas.png',
+      videoUrl: '/media/NWGL Christmas.mp4'
     },
     {
       title: 'RJZ - Bye Bye',
@@ -233,12 +241,19 @@ const Work: React.FC = () => {
       videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
     },
     {
+      title: 'RJZ - Not Yours',
+      category: 'Music Videos',
+      image: '/media/not yours.png',
+      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
+    },
+    {
       title: 'Photography',
       category: 'Photography',
       image: '/media/kiwi.jpg',
-    },
-   
+    }
     
+
+
   ];
 
   // Filter items based on active category
