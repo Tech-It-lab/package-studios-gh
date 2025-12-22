@@ -224,13 +224,13 @@ const Work: React.FC = () => {
     },
     {
       title: 'NWGL Christmas',
-      category: 'Animation',
+      category: 'Animations',
       image: '/media/UHL.png',
       videoUrl: '/media/UHL Xmas.mp4'
     },
     {
       title: 'NWGL Christmas',
-      category: 'Animation',
+      category: 'Animations',
       image: '/media/NWGL Xmas.png',
       videoUrl: '/media/NWGL Christmas.mp4'
     },
