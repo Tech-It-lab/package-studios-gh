@@ -223,7 +223,7 @@ const Work: React.FC = () => {
       videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
     },
     {
-      title: 'NWGL Christmas',
+      title: 'UHL Christmas',
       category: 'Animations',
       image: '/media/UHL.png',
       videoUrl: '/media/UHL Xmas.mp4'
