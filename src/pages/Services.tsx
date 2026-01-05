@@ -12,34 +12,6 @@ import Button from '../components/Button';
 const Services: React.FC = () => {
   const services = [
     {
-      id: 'music-videos',
-      title: 'Music Video Production',
-      description: 'Creative direction and professional production for artists and labels. We handle the entire process from concept to final delivery.',
-      icon: <Music size={36} />,
-      details: 'Our music video production services include concept development, location scouting, professional filming, and post-production with color grading.',
-      features: [
-        'Creative conceptualization and storyboarding',
-        'Professional cinematography and lighting',
-        'Art direction and set design',
-        'Post-production and color grading',
-        'Delivery in multiple formats'
-      ]
-    },
-    {
-      id: 'podcast-production',
-      title: 'Podcast Production',
-      description: 'End-to-end podcast production services with professional equipment and editing for high-quality audio content.',
-      icon: <Headphones size={36} />,
-      details: 'We provide complete podcast production solutions, from recording in our soundproofed studio to editing and distribution support.',
-      features: [
-        'Professional audio recording',
-        'Sound editing and mixing',
-        'Intro/outro music creation',
-        'Cover art design',
-        'Distribution platform setup'
-      ]
-    },
-    {
       id: 'documentaries',
       title: 'Documentaries',
       description: 'Compelling storytelling that captures real-life stories with depth, nuance, and cinematic quality.',
@@ -54,36 +26,8 @@ const Services: React.FC = () => {
       ]
     },
     {
-      id: 'photography',
-      title: 'Photography',
-      description: 'Professional photography for commercial, editorial, and personal projects with creative direction.',
-      icon: <Camera size={36} />,
-      details: 'Our photography services span commercial product photography, portraits, event coverage, and artistic photography.',
-      features: [
-        'Commercial and product photography',
-        'Portrait and lifestyle sessions',
-        'Event coverage',
-        'Retouching and image processing',
-        'Digital and print delivery'
-      ]
-    },
-    {
-      id: 'videography',
-      title: 'Videography',
-      description: 'High-quality video production for events, corporate videos, interviews, and more.',
-      icon: <Video size={36} />,
-      details: 'We provide videography services for corporate events, weddings, interviews, and other occasions requiring professional video coverage.',
-      features: [
-        'Event videography',
-        'Corporate video production',
-        'Interview and testimonial recording',
-        'Multi-camera setups',
-        'Highlight reels and full coverage options'
-      ]
-    },
-    {
       id: 'commercials',
-      title: 'Adverts & Commercials',
+      title: 'Ads & Commercials',
       description: 'Effective commercial content that promotes your brand and engages your target audience.',
       icon: <Monitor size={36} />,
       details: 'Our commercial production services help brands create impactful advertising content for TV, web, and social media platforms.',
@@ -110,6 +54,20 @@ const Services: React.FC = () => {
       ]
     },
     {
+      id: 'music-videos',
+      title: 'Music Video Production',
+      description: 'Creative direction and professional production for artists and labels. We handle the entire process from concept to final delivery.',
+      icon: <Music size={36} />,
+      details: 'Our music video production services include concept development, location scouting, professional filming, and post-production with color grading.',
+      features: [
+        'Creative conceptualization and storyboarding',
+        'Professional cinematography and lighting',
+        'Art direction and set design',
+        'Post-production and color grading',
+        'Delivery in multiple formats'
+      ]
+    },
+    {
       id: 'drone',
       title: 'Drone Services',
       description: 'Aerial photography and videography for unique perspectives and stunning visual content.',
@@ -121,6 +79,20 @@ const Services: React.FC = () => {
         'Real estate aerial tours',
         'Event aerial coverage',
         'Mapping and surveying'
+      ]
+    },
+    {
+      id: 'photography',
+      title: 'Photography',
+      description: 'Professional photography for commercial, editorial, and personal projects with creative direction.',
+      icon: <Camera size={36} />,
+      details: 'Our photography services span commercial product photography, portraits, event coverage, and artistic photography.',
+      features: [
+        'Commercial and product photography',
+        'Portrait and lifestyle sessions',
+        'Event coverage',
+        'Retouching and image processing',
+        'Digital and print delivery'
       ]
     },
   ];
@@ -142,7 +114,7 @@ const Services: React.FC = () => {
       {/* Services Grid */}
       <section className="py-20" id="services-grid">
         <div className="container-custom">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <ServiceCard
                 key={service.id}
@@ -186,10 +158,8 @@ const Services: React.FC = () => {
                 <img
                   src={
                     service.id === 'music-videos' ? '/media/music vid.jpg' :
-                    service.id === 'podcast-production' ? '/media/pod.png' :
-                     service.id === 'documentaries' ? '/media/doc2.jpg' :
-                     service.id === 'photography' ? '/media/kev.jpg' :
-                     service.id === 'videography' ? '/media/doc.jpg' :
+                     service.id === 'documentaries' ? '/media/doc.jpg' :
+                     service.id === 'photography' ? '/media/ftyshoe.JPG' :
                      service.id === 'commercials' ? '/media/FTy sports jersey.png' :
                      service.id === 'social-media' ? '/media/sm.png' :
                      service.id === 'drone' ? '/media/drone1.jpg' :
