@@ -21,10 +21,8 @@ const Work: React.FC = () => {
   const categories = [
     'All',
     'Music Videos',
-    'Podcasts',
     'Photography',
     'Documentaries',
-    'Videography',
     'Commercials',
     'Animations'
   ];
@@ -41,10 +39,8 @@ const Work: React.FC = () => {
       // Map service IDs to categories
       const categoryMapping: {[key: string]: string} = {
         'music-videos': 'Music Videos',
-        'podcast-production': 'Podcasts',
         'photography': 'Photography',
         'documentaries': 'Documentaries',
-        'videography': 'Videography',
         'commercials': 'Commercials',
         'social-media': 'Commercials',
         'drone': 'Photography',
@@ -60,6 +56,25 @@ const Work: React.FC = () => {
 
   // Portfolio data
   const portfolioItems: PortfolioItemData[] = [
+    {
+      title: 'Sailor BTS',
+      category: 'Music Videos',
+      image: '/media/sailor bts.png',
+      videoUrl: "https://www.instagram.com/reel/DVtJpQICvFd/embed" 
+    },
+    {
+      title: 'Sailor - Music Video',
+      category: 'Music Videos',
+      image: '/media/Sailor.png',
+      videoUrl: "https://youtube.com/embed/RFn82FbGkLQ" 
+    },
+    {
+      title: 'Nkwa Foundation',
+      category: 'Documentaries',
+      image: '/media/Nkwa.png',
+      videoUrl: "https://www.instagram.com/reel/DVEi9C6CoQC/embed"
+    },
+    
     {
       title: 'Food Photography',
       category: 'Photography',
@@ -91,7 +106,43 @@ const Work: React.FC = () => {
       category: 'Photography',
       image: '/media/rock 4.jpg',
     },
+    {
+      title: 'NWGL New Year Promo',
+      category: 'Animations',
+      image: '/media/NWGL New yr pic.jpeg',
+      videoUrl: "/media/NWGL NEW YEAR PROMO.MP4" 
+    },
+    {
+      title: 'UHL New Year Promo',
+      category: 'Animations',
+      image: '/media/UHL New yr pic.jpeg',
+      videoUrl: "/media/UHL New yr pic.jpeg" 
+    },
+    {
+      title: 'RJZ ft Kwesi Arthur - Hello Daddy',
+      category: 'Music Videos',
+      image: '/media/daddy.png',
+      videoUrl: 'https://youtube.com/embed/X48qb6124n0'
+    },
     
+    {
+      title: 'UHL Christmas',
+      category: 'Animations',
+      image: '/media/UHL.png',
+      videoUrl: '/media/UHL Xmas.mp4'
+    },
+    {
+      title: 'NWGL Christmas',
+      category: 'Animations',
+      image: '/media/NWGL Xmas.png',
+      videoUrl: '/media/NWGL Christmas.mp4'
+    },
+    {
+      title: 'Tulenkey - Your Girlfriend',
+      category: 'Music Videos',
+      image: '/media/tulenkey.jpg',
+      videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
+    },
     {
       title: 'Excellent - Music Video',
       category: 'Music Videos',
@@ -126,28 +177,27 @@ const Work: React.FC = () => {
       image: '/media/sunflower.jpg'
     },
     {
-      title: 'Podcast Studio Setup',
-      category: 'Podcasts',
-      image: '/media/pod.jpg'
+      title: 'Barracha Ad',
+      category: 'Commercials',
+      image: '/media/barracha 5.png',
+      videoUrl: '/media/barracha.MP4'
     },
-  
     {
       title: 'Excellent BTS',
       category: 'Music Videos',
       image: '/media/Excellent_BTS_img.png',
-      videoUrl: 'https://www.instagram.com/reel/DMVqIjXqxzk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+      videoUrl: 'https://www.instagram.com/reel/DMVqIjXqxzk/embed'
     },
     {
       title: 'Guzangs Fashion Video',
       category: 'Commercial',
       image: '/media/Guzangs.png',
-      videoUrl: 'https://www.instagram.com/reel/DL0ADi_RWI4/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='
+      videoUrl: 'https://www.instagram.com/reel/DMT4F0Zql9O/embed'
     },
     {
       title: 'RJZ - fOR lIFE',
       category: 'Music Videos',
-      image: 'https://ghanamusic.com/wp-content/uploads/2020/04/PSX_20200420_150219-1200x900.jpg',
-      videoUrl: 'https://www.youtube.com/embed/x4gBS0byPR0'
+      image: '/media/for life.jpeg',
     },
      {
       title: 'Free The Youth',
@@ -164,7 +214,7 @@ const Work: React.FC = () => {
     },
     {
       title: 'This is Ghana',
-      category: 'Videography',
+      category: 'Commercials',
       image: '/media/this is ghana pic.jpg',
       videoUrl: 'https://www.youtube.com/embed/wCGpuRi9V3E'
     },
@@ -211,47 +261,50 @@ const Work: React.FC = () => {
       videoUrl: 'https://youtube.com/embed/5mi17VuTON0'
     },
     {
-      title: 'RJZ ft Kwesi Arthur - Hello Daddy',
+      title: 'RJZ - Not Yours',
       category: 'Music Videos',
-      image: '/media/daddy.png',
-      videoUrl: 'https://youtube.com/embed/X48qb6124n0'
+      image: '/media/not yours.png',
+      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
+    },
+    
+    {
+      title: 'Photography',
+      category: 'Photography',
+      image: '/media/kiwi.jpg',
     },
     {
-      title: 'Tulenkey - Your Girlfriend',
-      category: 'Music Videos',
-      image: '/media/tulenkey.jpg',
-      videoUrl: 'https://youtube.com/embed/zXjitxBJ_KE'
+      title: 'Barracha Ad',
+      category: 'Commercials',
+      image: '/media/barracha1.PNG',
+      videoUrl: '/media/barracha2.MP4'
     },
     {
-      title: 'UHL Christmas',
-      category: 'Animations',
-      image: '/media/UHL.png',
-      videoUrl: '/media/UHL Xmas.mp4'
+      title: 'Barracha Ad',
+      category: 'Commercials',
+      image: '/media/barracha4.jpeg',
+      videoUrl: '/media/barracha 3.MP4'
     },
     {
-      title: 'NWGL Christmas',
-      category: 'Animations',
-      image: '/media/NWGL Xmas.png',
-      videoUrl: '/media/NWGL Christmas.mp4'
+      title: 'FTY shoe Ad',
+      category: 'Photography',
+      image: '/media/ftyshoe.JPG',
+    },
+    {
+      title: 'FTY shoe Ad',
+      category: 'Photography',
+      image: '/media/fty shoe2.JPG',
+    },
+      {
+      title: 'FTY shoe Ad',
+      category: 'Photography',
+      image: '/media/fty shoe1.JPG',
     },
     {
       title: 'RJZ - Bye Bye',
       category: 'Music Videos',
       image: '/media/bye-bye-cover-art.jpg',
       videoUrl: 'https://youtube.com/embed/jQpdf1rTZRA'
-    },
-    {
-      title: 'RJZ - Not Yours',
-      category: 'Music Videos',
-      image: '/media/not yours.png',
-      videoUrl: 'https://youtube.com/embed/8VWeQ_45h5I'
-    },
-    {
-      title: 'Photography',
-      category: 'Photography',
-      image: '/media/kiwi.jpg',
     }
-    
 
 
   ];
